@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/buttonshapesearch"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtChar"
+        android:textStyle="bold"
+        android:background="@color/bg_login"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+</LinearLayout>

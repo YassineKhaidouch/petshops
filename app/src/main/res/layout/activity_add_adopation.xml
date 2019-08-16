@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="petshops.developerpet.com.petshops.Activities.Add_page">
+    <TextView
+        android:id="@+id/montions"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red1"
+        android:text="All fields are mandatory"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <ScrollView
+        android:layout_below="@+id/montions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/border_waite"
+                android:id="@+id/addphotos"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_image"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                />
+            <LinearLayout
+                android:id="@+id/imagelayoutbar"
+                android:padding="5dp"
+                android:background="@drawable/bt_shape"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/image1"
+                    android:src="@mipmap/addimage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/image2"
+                    android:src="@mipmap/addimage2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/image3"
+                    android:src="@mipmap/addimage2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+            <EditText
+                android:hint="Pet Type"
+                android:id="@+id/typepet"
+                style="@style/border_small"
+                />
+            <EditText
+                android:hint="Breed"
+                android:id="@+id/breed"
+                style="@style/border_small"
+                />
+
+            <RelativeLayout
+                android:id="@+id/agelayout"
+                android:visibility="visible"
+                style="@style/border_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="4dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="20dp"
+                    />
+                <EditText
+                    android:layout_margin="4dp"
+                    android:id="@+id/years"
+                    android:hint="Years"
+                    android:background="@drawable/bt_shape"
+                    android:textSize="19dp"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/blue"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/months" />
+                <EditText
+                    android:layout_margin="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_shape"
+                    android:hint="Months"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/blue"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:hint="Duration to Adopt"
+                android:id="@+id/duration"
+                style="@style/border_small"
+                />
+            <EditText
+                android:hint="Owner's Name"
+                android:id="@+id/ownername"
+                style="@style/border_small"
+                />
+            <EditText
+                android:hint="Phone Number"
+                android:id="@+id/phone"
+                style="@style/border_small"
+                />
+            <EditText
+                android:id="@+id/price"
+                android:hint="Small Adopation describe"
+                android:background="@drawable/bt_shape"
+                android:textSize="19dp"
+                android:textColorHint="#6c9993"
+                android:textColor="@color/blue"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart"
+                android:gravity="top|start"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/description"
+                android:hint="Pet Description"
+                android:background="@drawable/bt_shape"
+                android:textSize="19dp"
+                android:textColorHint="#6c9993"
+                android:textColor="@color/blue"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart"
+                android:gravity="top|start"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                />
+            <android.support.design.widget.FloatingActionButton
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_gravity="center"
+                android:id="@+id/addSaleData"
+                android:layout_width="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/arrow_right_wait"
+                app:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

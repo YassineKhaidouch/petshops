@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Notifications">
+
+    <Button
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:text="Selecte All"
+        android:background="@color/green1"
+        android:id="@+id/selecteAll"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/deleteAll"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:background="@color/Grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Delete All Selected"
+        android:background="@color/red2"
+        android:id="@+id/deleteAll"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        />
+</RelativeLayout>

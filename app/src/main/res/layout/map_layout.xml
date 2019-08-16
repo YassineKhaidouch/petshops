@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearlayouttop"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@drawable/bt_shape"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/search" />
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:elevation="13dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/recycleListPotsStore"
+            app:reverseLayout="true" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayouttop">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_gravity="bottom"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/tabs"
+            android:id="@+id/sildbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="1dp"
+        app:backgroundTint="#ff00f2"
+        android:src="@drawable/ic_float_button"
+        app:fabSize="mini"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="1dp"
+        app:fabSize="mini"
+        android:visibility="visible"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@mipmap/locationgps"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

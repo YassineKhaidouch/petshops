@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="petshops.developerpet.com.petshops.fragments.ListPets_fragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleListProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="1dp"
+        android:layout_gravity="bottom|right"
+        app:backgroundTint="#ff00f2"
+        android:src="@drawable/ic_float_button"
+        app:fabSize="mini"
+        android:layout_margin="10dp" />
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="130dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/viewimage"
+            android:background="@drawable/bt_shape_black"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="1dp"
+                android:src="@android:mipmap/sym_def_app_icon"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/viewimage">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:id="@+id/price"
+                android:text="text small describe"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageView6"
+                android:layout_above="@+id/duration" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_right_blue"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageView6" />
+            <TextView
+                android:padding="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_style_fill"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/duration"
+                android:text="2 days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="10sp"
+                android:id="@+id/timestamp"
+                android:text="20 min ago"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/edit_delete"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/editpost"
+                    android:src="@drawable/icons_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:id="@+id/deletepost"
+                    android:src="@drawable/iconsdelete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

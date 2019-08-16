@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/silder_sales"
+            android:title="My Sales" />
+        <item
+            android:id="@+id/nav_inbox_chat"
+            android:icon="@android:drawable/stat_notify_chat"
+            android:title="My Inbox" />
+        <item
+            android:id="@+id/nav_adoptions"
+            android:icon="@drawable/silder_myadoptions"
+            android:title="My Adoptions" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="My Categories" />
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@drawable/silder_myplan"
+            android:title="My Plan" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_terms_contions"
+            android:icon="@drawable/slider_terms"
+            android:title="Terms and Conditions" />
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/silder_privacy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/sildercontact_us"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="Rate Us" />
+
+    </group>
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeUsername"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="22sp"
+            android:textColor="#e1555955"
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:id="@+id/username"
+            android:textColor="@color/blue4"
+            android:text="your username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_right_blue_small"
+            android:id="@+id/image1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeEmail"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="22sp"
+            android:textColor="#e1555955"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/email"
+            android:textColor="@color/blue4"
+            android:text="your email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_right_blue_small"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativePhone"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="22sp"
+            android:textColor="#e1555955"
+            android:text="Phone Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/numberphone"
+            android:textColor="@color/blue4"
+            android:text="+xxx"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:id="@+id/image3"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_right_blue_small"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativePassword"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="22sp"
+            android:textColor="#e1555955"
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:id="@+id/password"
+            android:textColor="@color/blue4"
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_right_blue_small"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edimyprofile"
+        android:layout_marginTop="20dp"
+        app:theme="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:elevation="1dp"
+        app:srcCompat="@drawable/icons_edit" />
+</LinearLayout>

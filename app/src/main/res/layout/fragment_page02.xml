@@ -1,0 +1,30 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="petshops.developerpet.com.petshops.StartActivitypages.page02">
+    <ImageView
+        android:background="@color/Grey"
+        android:padding="5dp"
+        android:src="@mipmap/image01"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attractive plans. It's free use to use till 31st May 2018"
+        android:id="@+id/textView3" />
+
+
+</RelativeLayout>

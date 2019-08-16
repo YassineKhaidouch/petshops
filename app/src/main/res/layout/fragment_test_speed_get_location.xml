@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="petshops.developerpet.com.petshops.fragments.TestSpeedGetLocation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:gravity="center"
+        android:textSize="24sp"
+        android:id="@+id/timetext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+ <TextView
+        android:gravity="center|top"
+        android:textSize="24sp"
+        android:id="@+id/data_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="hello_blan" />
+
+</FrameLayout>

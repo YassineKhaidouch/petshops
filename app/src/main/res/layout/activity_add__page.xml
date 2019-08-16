@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="petshops.developerpet.com.petshops.Activities.Add_page">
+    <TextView
+        android:id="@+id/montions"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red1"
+        android:text="All fields are mandatory"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <ScrollView
+        android:layout_below="@+id/montions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/border_waite"
+                android:id="@+id/addphotos"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_image"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                />
+            <LinearLayout
+                android:id="@+id/imagelayoutbar"
+                android:gravity="center"
+                android:background="@drawable/bt_shape"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/shopeimage1"
+                    android:src="@mipmap/addimage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/shopeimage2"
+                    android:src="@mipmap/addimage2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                 <ImageView
+                     android:layout_margin="5dp"
+                     android:id="@+id/shopeimage3"
+                    android:src="@mipmap/addimage2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/name"
+                style="@style/border_small"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weekdays"
+                android:textSize="18dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/weekdaysform"
+                style="@style/border_small"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Hours"
+                    android:textSize="18dp"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        style="@style/border_small_date"
+                        android:id="@+id/shopOpenfrom"
+                        android:hint="From"
+                        />
+                    <Button
+                        style="@style/border_small_date"
+                        android:id="@+id/shopOpento"
+                        android:hint="To"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="WEEKENDS"
+                />
+
+            <LinearLayout
+                android:id="@+id/weekendayform"
+                style="@style/border_small"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Open Hours"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/border_small_date"
+                        android:id="@+id/shopWeekendOpenfrom"
+                        android:hint="From"
+                        />
+                    <Button
+                        style="@style/border_small_date"
+                        android:id="@+id/shopWeekendOpento"
+                        android:hint="To" />
+                </LinearLayout>
+            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/bt_shape"
+                android:id="@+id/addressShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Address "
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/getAddressbyMap" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gpslocationmarker"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/getAddressbyMap" />
+        </RelativeLayout>
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/contactNumber"
+                android:hint="Contact Number"
+                style="@style/border_small"/>
+            <EditText
+                android:id="@+id/contactPerson"
+                android:hint="Contact Person"
+                style="@style/border_small"/>
+          <EditText
+              android:id="@+id/availablePets"
+              android:hint="Available Pets"
+              android:background="@drawable/bt_shape"
+              android:textSize="18dp"
+              android:textColorHint="@color/blue"
+              android:textColor="@color/blue"
+              android:inputType="textMultiLine"
+              android:textAlignment="textStart"
+              android:gravity="top|start"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:layout_marginTop="10dp"
+              />
+          <EditText
+              android:id="@+id/availableProducts"
+              android:hint="Available Products"
+              android:background="@drawable/bt_shape"
+              android:textSize="18dp"
+              android:textColorHint="@color/blue"
+              android:textColor="@color/blue"
+              android:inputType="textMultiLine"
+              android:textAlignment="textStart"
+              android:gravity="top|start"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:layout_marginTop="10dp"
+              android:scrollbarAlwaysDrawVerticalTrack="true"
+              />
+            <android.support.design.widget.FloatingActionButton
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_gravity="center"
+                android:id="@+id/addShopData"
+                android:layout_width="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/arrow_right_wait"
+                app:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
