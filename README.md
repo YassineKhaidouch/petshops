@@ -1,2 +1,2 @@
 # petshops
-this android studio source code sell/buy, care, adoption pets
+this source code for android application to sell/buy, care and adoption pets
